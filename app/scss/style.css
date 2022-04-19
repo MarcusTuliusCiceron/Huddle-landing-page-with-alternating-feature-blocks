@@ -500,7 +500,78 @@ body main footer {
   min-height: 300px;
   background-color: #00252e;
   margin-top: -100px;
-  padding-top: 200px;
+  padding-top: 195px;
+  color: white;
+}
+
+body main footer .footer {
+  border: solid 1px red;
+  width: 85%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "A A A A" "B E F G" "C E F G" "D E F G";
+}
+
+body main footer .footer .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: A;
+  width: 240px;
+  height: 39px;
+  background-image: url(../../images/logo_copy.png);
+}
+
+body main footer .footer .location {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+body main footer .footer .telefon {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: C;
+}
+
+body main footer .footer .mail {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: D;
+}
+
+body main footer .footer .links1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: E;
+}
+
+body main footer .footer .links2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: F;
+}
+
+body main footer .footer .icon {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: G;
 }
 
 @media (max-width: 65.5625rem) {
